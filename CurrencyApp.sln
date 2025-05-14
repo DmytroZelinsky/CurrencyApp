@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyApp", "CurrencyApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyApp.Domain", "CurrencyApp.Domain\CurrencyApp.Domain.csproj", "{5E3C5CFA-B1AF-4217-9031-CCDD111DA448}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyApp.Infastructure", "CurrencyApp.Infastructure\CurrencyApp.Infastructure.csproj", "{74D92FF3-40E6-4F81-A78F-89E90E6FBCA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyApp.Infrastructure", "CurrencyApp.Infastructure\CurrencyApp.Infrastructure.csproj", "{74D92FF3-40E6-4F81-A78F-89E90E6FBCA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyApp.Application", "CurrencyApp.Application\CurrencyApp.Application.csproj", "{25537289-6A93-4E52-94E4-C1CCB9155C7F}"
 EndProject
