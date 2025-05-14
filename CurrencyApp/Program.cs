@@ -1,5 +1,6 @@
 using CurrencyApp.Application;
 using CurrencyApp.Infrastructure;
+using CurrencyApp.Infrastructure.EF;
 
 namespace CurrencyApp
 {
@@ -17,6 +18,7 @@ namespace CurrencyApp
 			builder.Services.AddSwaggerGen();
 
 			builder.Services.AddInfrastructure();
+			builder.Services.AddInfrastructureEF(builder.Configuration);
 			builder.Services.AddApplication();
 
 			var app = builder.Build();

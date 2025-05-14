@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CurrencyApp.Application\CurrencyApp.Application.csproj" />
     <ProjectReference Include="..\CurrencyApp.Infastructure\CurrencyApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\CurrencyApp.Infrastructure.EF\CurrencyApp.Infrastructure.EF.csproj" />
   </ItemGroup>
 
 </Project>
