@@ -1,5 +1,8 @@
 ﻿using System.Reflection;
 
+using CurrencyApp.Application.Caching;
+using MediatR;
+
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CurrencyApp.Application;
@@ -12,6 +15,8 @@ public static class DependencyInjection
 		{
 			cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
 		});
+
+		services.AddTransient(typeof(IPipelineBehavior<,>), typeof(CachingBehavior<,>));
 
 		return services;
 	}

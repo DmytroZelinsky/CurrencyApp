@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 
 using CurrencyApp.Application.Abstraction;
+using CurrencyApp.Application.Caching;
+using CurrencyApp.Infrastructure.Caching;
 using CurrencyApp.Infrastructure.CurrencyProviders.Frunkfurter;
 using CurrencyApp.Infrastructure.Mapping.AutoMapper;
 using CurrencyApp.Infrastructure.Mapping.AutoMapper.Profilers.Frunkfurter;
@@ -27,6 +29,8 @@ public static class DependencyInjection
 		services.AddSingleton(autoMapper);
 
 		services.AddSingleton<ICustomMapper, AutoMapperAdapter>();
+
+		services.AddSingleton<ICache, InMemoryCache>();
 
 		return services;
 	}

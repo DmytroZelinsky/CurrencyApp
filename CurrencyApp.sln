@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyApp", "CurrencyApp\CurrencyApp.csproj", "{2223E9B7-AB8C-4332-8F5A-DBA151011A02}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyApp.Infrastructure", "CurrencyApp.Infastructure\CurrencyApp.Infrastructure.csproj", "{74D92FF3-40E6-4F81-A78F-89E90E6FBCA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyApp.Application", "CurrencyApp.Application\CurrencyApp.Application.csproj", "{25537289-6A93-4E52-94E4-C1CCB9155C7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyApp.Infrastructure.EF", "CurrencyApp.Infrastructure.EF\CurrencyApp.Infrastructure.EF.csproj", "{042C3D19-93A4-4EED-964D-57CEC2376D79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{25537289-6A93-4E52-94E4-C1CCB9155C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25537289-6A93-4E52-94E4-C1CCB9155C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25537289-6A93-4E52-94E4-C1CCB9155C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042C3D19-93A4-4EED-964D-57CEC2376D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042C3D19-93A4-4EED-964D-57CEC2376D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042C3D19-93A4-4EED-964D-57CEC2376D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042C3D19-93A4-4EED-964D-57CEC2376D79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CurrencyApp.Domain.Entities;
 
-namespace CurrencyApp.Application.Models
+namespace CurrencyApp.Application.Models;
+
+public class CurrencyConversionResponse
 {
-	public class CurrencyConversionResponse
-	{
-	}
+	public decimal Amount { get; set; }
+
+	public required ExchangeRateSnapshot ExchangeRateSnapshot { get; set; }
 }

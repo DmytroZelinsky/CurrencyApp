@@ -11,6 +11,8 @@ public class ConvertCurrencyQueryHandler(ICurrencyProvider currencyRateService) 
 	{
 		var snapshot = await currencyRateService.GetExchangeRateSnapshot(request.BaseCurrency, request.TargetedCurrency);
 
-		return new CurrencyConversionResponse();
+		snapshot.Rates.ForEach(x => x.Value *= request.BaseAmount);
+
+		return new CurrencyConversionResponse() { Amount = request.BaseAmount, ExchangeRateSnapshot = snapshot };
 	}
 }

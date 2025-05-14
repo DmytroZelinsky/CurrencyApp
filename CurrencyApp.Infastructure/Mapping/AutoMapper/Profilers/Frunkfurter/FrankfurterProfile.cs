@@ -13,5 +13,9 @@ internal class FrankfurterProfile : Profile
 			.ForMember(dest => dest.Rates, source => source.MapFrom(x => x.Rates.Select(kvp => new Rate() { Currency = kvp.Key, Value = kvp.Value })))
 			.ForMember(dest => dest.BaseCurrency, source => source.MapFrom(x => x.Base));
 
+		CreateMap<FrunkfurterRateHistory, ExchangeRateHistory>()
+			.ForMember(dest => dest.DatedRates, 
+				source => source.MapFrom(x => x.DatedRates.ToDictionary(k => k.Key, v => v.Value.Select(kvp => new Rate() { Currency = kvp.Key, Value = kvp.Value }))))
+			.ForMember(dest => dest.BaseCurrency, source => source.MapFrom(x => x.Base));
 	}
 }

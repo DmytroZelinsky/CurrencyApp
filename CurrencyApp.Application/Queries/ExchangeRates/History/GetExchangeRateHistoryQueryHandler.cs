@@ -1,6 +1,4 @@
-﻿
-using CurrencyApp.Application.Abstraction;
-using CurrencyApp.Application.Queries.ExchangeRates.Conversion;
+﻿using CurrencyApp.Application.Abstraction;
 using CurrencyApp.Domain.Entities;
 
 using MediatR;

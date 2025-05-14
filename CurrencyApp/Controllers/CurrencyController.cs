@@ -13,15 +13,21 @@ namespace CurrencyApp.Controllers;
 public class CurrencyController(IMediator mediator) : ControllerBase
 {
 	[HttpGet("ConvertCurrency")]
-	public async Task<IActionResult> ConvertCurrency(string baseCurrency, string baseAmount, string[] targetedCurrency)
+	public async Task<IActionResult> ConvertCurrency(string baseCurrency, decimal baseAmount, [FromQuery] string[]? targetedCurrency = null)
 	{
 		return Ok(await mediator.Send(new ConvertCurrencyQuery(baseCurrency, baseAmount, targetedCurrency)));
 	}
 
 	[HttpGet("GetExchangeRateHistory")]
-	public async Task<IActionResult> GetExchangeRateHistory(string baseCurrency, string[] targetedCurrency, DateTime startDate, DateTime endDate)
+	public async Task<IActionResult> GetExchangeRateHistory(
+		int? skip, 
+		int? take, 
+		string baseCurrency, 
+		DateTime startDate, 
+		DateTime? endDate = null, 
+		[FromQuery] string[]? targetedCurrency = null)
 	{
-		return Ok(await mediator.Send(new GetExchangeRateHistoryQuery(baseCurrency, targetedCurrency, startDate, endDate)));
+		return Ok(await mediator.Send(new GetExchangeRateHistoryQuery(skip, take, baseCurrency, targetedCurrency, startDate, endDate)));
 	}
 
 	[HttpGet("GetExchangeRateSnapshot")]
