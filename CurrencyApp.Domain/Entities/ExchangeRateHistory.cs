@@ -14,5 +14,5 @@ public class ExchangeRateHistory
 
 	public DateTime EndDate { get; set; }
 
-	public required Dictionary<DateTime, Rate> Rates { get; set; }
+	public required Dictionary<DateTime, List<Rate>> DatedRates { get; set; }
 }

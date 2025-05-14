@@ -1,5 +1,5 @@
-
-using System.Reflection;
+using CurrencyApp.Application;
+using CurrencyApp.Infrastructure;
 
 namespace CurrencyApp
 {
@@ -16,10 +16,8 @@ namespace CurrencyApp
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
 
-			builder.Services.AddMediatR(cfg =>
-			{
-				cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
-			});
+			builder.Services.AddInfrastructure();
+			builder.Services.AddApplication();
 
 			var app = builder.Build();
 

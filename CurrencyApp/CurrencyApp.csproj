@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CurrencyApp.Application\CurrencyApp.Application.csproj" />
+    <ProjectReference Include="..\CurrencyApp.Infastructure\CurrencyApp.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

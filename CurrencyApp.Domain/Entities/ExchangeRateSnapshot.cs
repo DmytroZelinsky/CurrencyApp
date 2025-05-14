@@ -12,5 +12,5 @@ public class ExchangeRateSnapshot
 
 	public DateTime Date { get; set; }
 
-	public required Rate Rate { get; set; }
+	public required List<Rate> Rates { get; set; }
 }

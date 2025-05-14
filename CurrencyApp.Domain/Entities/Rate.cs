@@ -10,5 +10,5 @@ public class Rate
 {
 	public required string Currency { get; set; }
 
-	public required string Value { get; set; }
+	public required decimal Value { get; set; }
 }
